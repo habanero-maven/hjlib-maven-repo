@@ -6,7 +6,7 @@
 
     <groupId>edu.rice</groupId>
     <artifactId>hjlib-cooperative</artifactId>
-    <version>0.1.9-SNAPSHOT</version>
+    <version>0.1.8</version>
     <packaging>jar</packaging>
 
     <organization>
