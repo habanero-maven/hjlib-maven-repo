@@ -9,9 +9,8 @@ HJlib to it is as follows:
    the site-maven-plugin Maven plugin targeting the hjlib-maven-repo Github
    repo. If it does not, you may be using a version of HJlib that does not
    currently support deploying to Github.
-3. Update the pom.xml to a new version number by updating the hjlib.version
-   property inside the <properties> tag. This will automatically change the
-   version number of the generated JAR and the branch pushed to in Github to
-   protect against overwriting older versions.
+3. Update the pom.xml to a new version number by changing the value inside the
+   <version> tags. This will automatically change the version number of both the
+   generated JAR and the target Github repo.
 4. Run 'mvn deploy' to send the latest bits up to Github.
 5. Update any pom.xml files for local projects to point to the new Github branch.
