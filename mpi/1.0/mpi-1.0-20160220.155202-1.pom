@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.rice</groupId>
-    <artifactId>hjlib-cooperative</artifactId>
-    <version>0.1.9-SNAPSHOT</version>
+    <groupId>mpi</groupId>
+    <artifactId>mpi</artifactId>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <organization>
@@ -14,20 +14,9 @@
         <url>http://compsci.rice.edu/</url>
     </organization>
 
-    <description>Habanero-Java as a Library.</description>
+    <description>MPI JAR</description>
 
     <dependencies>
-        <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm-all</artifactId>
-            <version>5.0.3</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <properties>
@@ -43,7 +32,7 @@
         <repository>
             <id>internal.repo</id>
             <name>Temporary Staging Repository</name>
-            <url>file://${project.build.directory}/mvn-repo-${project.version}</url>
+            <url>file://${project.build.directory}/mvn-repo-mpi</url>
         </repository>
     </distributionManagement>
 
@@ -60,7 +49,7 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.1</version>
                 <configuration>
-                    <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo-${project.version}</altDeploymentRepository>
+                    <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo-mpi</altDeploymentRepository>
                 </configuration>
             </plugin>
             <plugin>
@@ -70,8 +59,8 @@
                 <configuration>
                     <message>Maven artifacts</message>  <!-- git commit message -->
                     <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-                    <outputDirectory>${project.build.directory}/mvn-repo-${project.version}</outputDirectory> <!-- matches distribution management repository url above -->
-                    <branch>refs/heads/mvn-repo-${project.version}</branch>                       <!-- remote branch name -->
+                    <outputDirectory>${project.build.directory}/mvn-repo-mpi</outputDirectory> <!-- matches distribution management repository url above -->
+                    <branch>refs/heads/mvn-repo-mpi</branch>                       <!-- remote branch name -->
                     <includes><include>**/*</include></includes>
                     <repositoryName>hjlib-maven-repo</repositoryName>      <!-- github repo name -->
                     <repositoryOwner>habanero-maven</repositoryOwner>    <!-- github username  -->
