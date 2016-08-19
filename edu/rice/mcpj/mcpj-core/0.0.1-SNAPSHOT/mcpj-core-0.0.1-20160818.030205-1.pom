@@ -3,18 +3,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.rice.mcpj</groupId>
-    <artifactId>mcpj-project</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <properties>
-        <github.global.server>github</github.global.server>
-        <dev.build.timestamp>${maven.build.timestamp}</dev.build.timestamp>
-        <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
-        <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <!-- parent coordinates -->
+    <parent>
+        <groupId>edu.rice.mcpj</groupId>
+        <artifactId>mcpj-project</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 
     <distributionManagement>
         <repository>
@@ -56,40 +50,20 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
-    <modules>
-        <module>mcpj-core</module>
-        <module>mcpj-examples</module>
-    </modules>
+    <!-- project coordinates -->
+    <artifactId>mcpj-core</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
-    <!-- TEAM -->
-    <developers>
-        <developer>
-            <id>simam</id>
-            <name>Shams Imam</name>
-            <email>shams@rice.edu</email>
-            <organization>Rice University - Department of Computer Science</organization>
-            <organizationUrl>http://compsci.rice.edu/</organizationUrl>
-            <roles>
-                <role>Researcher</role>
-            </roles>
-            <timezone>-5</timezone>
-            <properties>
-                <IM>not available</IM>
-                <PhoneNumber>not available</PhoneNumber>
-            </properties>
-        </developer>
-    </developers>
+    <!-- project dependencies -->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
