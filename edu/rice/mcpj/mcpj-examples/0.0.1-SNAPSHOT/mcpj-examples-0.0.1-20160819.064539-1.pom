@@ -11,7 +11,7 @@
     </parent>
 
     <!-- project coordinates -->
-    <artifactId>mcpj-core</artifactId>
+    <artifactId>mcpj-examples</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <!-- project dependencies -->
@@ -21,6 +21,11 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>edu.rice.mcpj</groupId>
+            <artifactId>mcpj-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
