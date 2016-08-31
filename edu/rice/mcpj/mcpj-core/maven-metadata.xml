@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>edu.rice.mcpj</groupId>
+  <artifactId>mcpj-core</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.2-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20160831213127</lastUpdated>
+  </versioning>
+</metadata>
