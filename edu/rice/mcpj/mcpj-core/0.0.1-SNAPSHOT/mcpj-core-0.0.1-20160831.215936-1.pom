@@ -3,11 +3,10 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-
     <groupId>edu.rice.mcpj</groupId>
     <artifactId>mcpj-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <github.global.server>github</github.global.server>
