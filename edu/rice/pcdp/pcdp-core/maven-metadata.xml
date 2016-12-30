@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>edu.rice.pcdp</groupId>
+  <artifactId>pcdp-core</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.4-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20161230162704</lastUpdated>
+  </versioning>
+</metadata>
