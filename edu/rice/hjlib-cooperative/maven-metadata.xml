@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>edu.rice</groupId>
+  <artifactId>hjlib-cooperative</artifactId>
+  <versioning>
+    <versions>
+      <version>0.1.11-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20170324143702</lastUpdated>
+  </versioning>
+</metadata>
